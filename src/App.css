@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: #1b252a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+  text-align: center;
+  /*padding-top: 20vh; */
+  padding-top: 5%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+    font-size: 4em;
+      /*font-family: 'Rubik Moonrocks', cursive;*/
+  font-family: 'Leckerli One', cursive;
+}
+
+input {
+  color: white;
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    padding: 2px;
+    margin: 2px;
+    border-bottom: solid 2px white;
+    text-align: center;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input:focus{
+  outline: none;
+}
+
+.content{
+  text-align: center;
+}
+
+.data-item p{
+padding: 3px;
+background-color: #344752;
+whidth:  50px;
+}
+
+@media screen and (max-width: 600px){
+  body{
+    /*margin: 0px;
+    padding: 0px;*/
   }
-  to {
-    transform: rotate(360deg);
+  img{
+    width: 30%;
+  }
+  h1{
+    font-size: 2em;
+  }
+  input{
+    font-size: 1em;
+    padding: 0px;
+    margin: 0px;
   }
 }
