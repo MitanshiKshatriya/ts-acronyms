@@ -6,7 +6,7 @@ Struggling with acronyms of Taylor Swift Songs? Use this: url
 
 ## Making Acronyms
 * Used spotify api to get songs list from all taylor swift albums
-* check the code in ```main.js``` file
+* check the code in ```src/main.js``` file
 
 ## Contribution
 
