@@ -36,6 +36,7 @@ function App() {
       <div className="content">
       <Content data={data} query={query}/>
       </div>
+      <div className="footer">*Check out the code at <a href="https://github.com/MitanshiKshatriya/ts-acronyms">GitHub</a></div>
     </div>
   );
 }

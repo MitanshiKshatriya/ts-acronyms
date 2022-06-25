@@ -46,6 +46,15 @@ background-color: #344752;
 whidth:  50px;
 }
 
+a{
+  color: #61dafb;
+}
+
+.footer{
+  margin-top: 20px;
+  text-align: center;
+}
+
 @media screen and (max-width: 600px){
   body{
     /*margin: 0px;
