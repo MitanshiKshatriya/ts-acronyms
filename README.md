@@ -1,6 +1,6 @@
 # Taylor Swift Acronyms
 
-Struggling with acronyms of Taylor Swift Songs? Use this: url
+Struggling with acronyms of Taylor Swift Songs? Use this: https://mitanshikshatriya.github.io/ts-acronyms/
 
 ![](taylor.gif)
 
