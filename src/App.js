@@ -1,6 +1,6 @@
 import img from './assets/g.png';
 import './App.css';
-import acronyms from './data.json'
+import acronyms from './acronyms'
 
 import { useState, useEffect } from 'react'
 import Content from './Components/Content'

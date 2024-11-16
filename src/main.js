@@ -10,10 +10,10 @@ const get_tracks_endpoint = ``;
 const headers = {
 	'Authorization': `Bearer ${token}`
 };
-let album_names =  ['taylor swift','fearless (Taylors version)','speak now deulexe','red (Taylors version)','1989 deulexe',
-'reputation','lover','folklore deulexe','evermore deulexe']
-let album_ids = ['5eyZZoQEFQWRHkV2xgAeBw','4hDok0OAJd57SGIT8xuWJH','6S6JQWzUrJVcJLK4fi74Fw','6kZ42qRrzov54LcAk4onW9','1yGbNOtRIgdIiGHOEBaZWf',
-			'6DEjYFkNZh67HP7R9PSZvv', '1NAmidJlEaVgA3MpcPFYGq', '1pzvBxYgT6OVwJLtHkrdQK', '6AORtDjduMM3bupSWzbTSG'];
+let album_names =  ['taylor swift','fearless (Taylors version)','speak now deulexe','red (Taylors version)','1989 (Taylors Version) [Deluxe]',
+'reputation','lover','folklore deulexe','evermore deulexe', 'Midnights (The Til Dawn Edition)', 'THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY']
+let album_ids = ['5eyZZoQEFQWRHkV2xgAeBw','4hDok0OAJd57SGIT8xuWJH','6S6JQWzUrJVcJLK4fi74Fw','6kZ42qRrzov54LcAk4onW9','1o59UpKw81iHR0HPiSkJR0',
+			'6DEjYFkNZh67HP7R9PSZvv', '1NAmidJlEaVgA3MpcPFYGq', '1pzvBxYgT6OVwJLtHkrdQK', '6AORtDjduMM3bupSWzbTSG', '1fnJ7k0bllNfL1kVdNVW1A', '5H7ixXZfsNMGbIE5OBSpcb'];
 let songs = [];
 
 //function to get ids of all albums
@@ -65,9 +65,9 @@ const get_tracks = async () => {
 }
 
 //create acronyms from songs in songs.txt file
-const create_acronyms = () => {
+const create_acronyms = async () => {
 
-
+ await get_tracks();
 	fs.readFile('songs.txt', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
